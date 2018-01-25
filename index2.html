@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    header
+    {
+        background-color: black;
+        width: auto;
+        height: 150px;
+    }
+    #logo
+    {
+        height: 150px;
+        width: auto;
+    }
+    .logoicon
+    {
+        height:inherit;
+        width: 70;
+        float: left;
+    }
+    .logoname
+    {
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 100px;
+        float: left;
+        /* margin-left: 80px; */
+    }
+    .logoname h1
+    {
+        font-family:Times New Roman;
+    }
+    .logoname h3
+    {
+        font-size: 100%
+    }
+    .search
+    {
+        float:right;
+        margin-top: 40px;
+    }
+    .container-1
+    {
+        margin-right:0px;
+        width: 400px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+        float: right;
+    }
+    .container-1 input#search
+    {
+        width: 300px;
+        height: 50px;
+        margin-top: 5px;
+        background: #d30505c4;
+        border: none;
+        font-size: 15pt;
+        float: left;
+        color:white;
+        padding-left: 45px;
+        border-radius: 20px;
+    }
+    .container-1 input#search:active
+    {
+        outline:none;
+        background-color: rgb(109, 219, 109);
+    }
+    .container-1 button{
+        position: absolute;
+        right: 28%;
+        top: 31%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    .menu
+    {
+        background-color: yellow;
+        float: right;
+        /* margin-top: 60px; */
+        width: 500px;
+        height: 40px;
+    }
+    .menu ul
+    {
+        margin: 10px;
+        list-style: none;
+    }
+    .menu ul li
+    {
+        float: left;
+    }
+    .menu ul li a
+    {
+        font-family: Lucida Sans Unicode;
+        font-size:20px;
+        margin: 0px 0px 0px 25px;
+        text-decoration: none;
+    }
+    .menu ul a:hover
+    {
+        background: green;
+        color: wheat;
+        border-radius: 10%;
+    }
+     .pics
+    {
+        width:auto;
+        height: 250px;
+        border-style: groove;
+        border-color: aqua;
+        animation: test 5s infinite;
+        transition: all 1;
+    }
+    @keyframes test{
+    0%{background-color: whitesmoke}
+    20%{background-color: red}
+    60%{background-color: aqua}
+    80%{background-color: blueviolet}
+    100%{background-color: cyan}
+    }
+    .firstimage
+    {
+        float: left;
+        width: 400px;
+    /* margin:0px auto; */
+    }
+    .firstimage img
+    {
+        width:300px;
+        transition: all 2s;
+    }
+    .firstimage:hover img
+    {
+        width: 330px;
+        border-radius: 50%;
+        /* transform: rotate(360); */
+    }
+    .secondimage
+    {
+        float: left;
+        width: 400px;
+    /* margin:0px auto; */
+    }
+    .secondimage img
+    {
+        width:300px;
+        transition: all 2s;
+    }
+    .secondimage:hover img
+    {
+        width: 330px;
+        border-radius: 50%;
+        /* transform: rotate(360); */
+    }
+    .thirdimage
+    {
+        float: left;
+        width: 400px;
+    /* margin:0px auto; */
+    }
+    .thirdimage img
+    {
+        width:300px;
+        transition: all 2s;
+    }
+    .thirdimage:hover img
+    {
+        width: 330px;
+        border-radius: 50%;
+        /* transform: rotate(360); */
+    }
+    .petheading
+    {
+        text-align: center;
+        font-family: Arial Narrow;
+    }
+    .explanation
+    {
+        width:100%;
+        height:100%;
+        background-color: blue;
+
+    }
+    .firstcolumn
+    {
+        width: 250px;
+        height: 350px;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        position:relative;
+        text-align: center;
+        /* left:3%; */
+
+    }
+    .secondcolumn
+    {
+        width: 250px;
+        height: 300px;
+        /* background-color: gray; */
+        float: left;
+        position: relative;
+        text-align: center;
+        /* left: 3%; */
+    }
+    .thirdcolumn
+    {
+        width: 250px;
+        height: 350px;
+        /* background-color: green; */
+        float: left;
+        position: relative;
+        text-align: center;
+        /* left: 3%; */
+    }
+    
+    .fourthcolumn
+    {
+        width: 250px;
+        height: 300px;
+        /* background-color: gray; */
+        float: left;
+        position: relative;
+        text-align: center;
+        /* left: 3%; */
+    }
+    
+    .fivecolumn
+    {
+        width: 250px;
+        height: 300px;
+        /* background-color: blue; */
+        float: left;
+        position: relative;
+        text-align: center;
+        /* left: 3%; */
+    }
+    .verticleline1
+    {
+        border-left: 2px dotted green;
+        float: left;
+        width: 4px;
+        height: 350px;
+    }
+    h2
+    {
+        text-align: center;
+        float: left;
+        width: 250px;
+        height: 50px;
+    }
+    h2:hover
+    {
+        font-size: 26px;
+        transition: all 2s;
+    }
+    footer
+    {
+        background-color: rgba(0, 0, 0, 0.774);
+        height: 250px;
+        width:auto;
+    }
+    .foot
+    {
+        width:1200px;
+        height:230px;
+        /* margin:80px; */
+        position: absolute;
+        left:30px; 
+    }
+    .firstfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .secondfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .thirdfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .fourthfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+    }
+    .verticleline2
+    {
+        border-left: 2px solid green;
+        float: left;
+        width: 4px;
+        height: 200px;
+    }
+    #fb
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #fb:hover
+    {
+        top: -5px;
+    }
+    #tw
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #tw:hover
+    {
+        top: -5px;
+    }
+    #wa
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #wa:hover
+    {
+        top: -5px;
+    }
+    #yt
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #yt:hover
+    {
+        top: -5px;
+    }
+</style>
+<body>
+    <header>
+        <div id="logo">
+            <div class="logoicon"><a href="index2.html"><img src="petshop.jpg" height="150px"></a></div>
+            
+            <div class="logoname">
+                <h1>Pet Shop</h1>
+                <h3>Buy & sell Pets-Pets Product</h3>
+            </div>
+            <div class="container-1">
+                <input type="search" id="search" placeholder="Search"/>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="menu">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <br clear="all"/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="pics">
+            <div class="firstimage"><img src="download (1).jpg"/></div>
+            <div class="secondimage"><img src="images.jpg"/></div>
+            <div class="thirdimage"><img src="images (1).jpg"/></div>
+    </div>
+    <br clear="all"/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="petheading"><h1>Pets For Sale</h1></div>
+    <br clear="all"/>
+    <hr/>
+    <h2>Birds</h2><h2>Cats</h2><h2>Dogs</h2><h2>Fish</h2><h2>others Animal</h2>
+            <br clear="all"/>
+        <div class="firstcolumn">
+            <b>
+            <a href="#">Australian Parrot</a>
+            <br/>
+            <br/>
+            <a href="#">Canary</a>
+            <br/>
+            <br/>
+            <a href="#">Cockatiel</a>
+            <br/>
+            <br/>
+            <a href="#">Cockatoo</a>
+            <br/>
+            <br/>
+            <a href="#">Conure</a>
+            <br/>
+            <br/>
+            <a href="#">Dove</a>
+            <br/>
+            <br/>
+            <a href="#">Finch</a>
+            <br/>
+            <br/>
+            <a href="#">Lory</a>
+            <br/>
+            <br/>
+            <a href="#">Lovebird</a>
+            <br/>
+            <br/>            
+            <!-- <a href="#">Macaw</a> -->
+            </b>
+        </div>
+        <div class="verticleline1"></div>
+                <!-- <br clear="all"/> -->
+        <div class="secondcolumn">
+                <b>
+                    <a href="#">Hamilton</a>
+                    <br/>
+                    <br/>                    
+                    <a href="#">Persian</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Persian (Doll Face)</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Persian (Piki Face)</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Persian (Punch Face)</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Persian (Round Face)</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Persian</a>
+                    <br/>
+                    <br/>
+                    <a href="#">Siamese</a>
+                    </b>
+        </div>
+        <div class="verticleline1"></div>
+            <!-- <br clear="all"/> -->
+        <div class="thirdcolumn">
+            <b>
+                <a href="#">Australian Shepherd</a>
+                <br/>
+                <br/>
+                <a href="#">Boxer</a>
+                <br/>
+                <br/>
+                <a href="#">Doberman</a>
+                <br/>
+                <br/>
+                <a href="#">German Shepherd</a>
+                <br/>
+                <br/>
+                <a href="#">Labrador</a>
+                <br/>
+                <br/>
+                <u style="color:rgba(125, 93, 199, 0.877);">Other</u>
+                <br/>
+                <br/>
+                <a href="#">Pointer</a>
+                <br/>
+                <br/>
+                <a href="#">Puppy</a>
+                <br/>
+                <br/>
+                <a href="#">Rottweiler</a>
+                <br/>
+                <br/>
+                <!-- <a href="#">Russian</a> -->
+            </b>
+        </div>
+        <div class="verticleline1"></div>
+        <!-- <br clear="all"/> -->
+        <div class="fourthcolumn">
+                    <b>
+                        <a href="#">Goldfish</a>
+                        <br/>
+                        <br/>
+                        <a href="#">Gourami</a>
+                        <br/>
+                        <br/>
+                        <a href="#">Oscar</a>
+                        <br/>
+                        <br/>
+                        <u style="color:rgba(125, 93, 199, 0.877);">Other</u>
+                        <br/>
+                        <br/>
+                        <a href="#">Parrot</a>
+                        <br/>
+                        <br/>
+                        <a href="#">Sucker</a>
+                    </b>
+        </div>
+        <div class="verticleline1"></div>
+        <!-- <br clear="all"/> -->
+        <div class="fivecolumn">
+                            <b>
+                                    <a href="#">Buffalo</a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">Camel</a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">Goat</a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">Hen</a>
+                                    <br/>
+                                    <br/>
+                                    <u style="color:rgba(125, 93, 199, 0.877);">Other</u>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">Rabbit</a>
+                                    <br/>
+                                    <br/>
+                                    <a href="#">Sheep</a>
+                            </b>
+        </div>
+        <br clear="all"/>
+        <br/>
+        <footer>
+            <div class="foot">
+                <div class="firstfoot">
+                    <h3 style="text-align:center;color:red;">Contacts</h3>
+                    <br clear="all"/>
+                    <b>
+                        <table>
+                            <tr><td>Mobile:</td><td>12345678910</td></tr>
+                            <tr><td>Whatsapp:</td><td>7555325706</td></tr>
+                            <tr><td>Email:</td><td>abc@gmail.com</td></tr>
+                            <tr><td>tweet:</td><td><a href="mailto:abc@mail.com">Tweet link</a></td></tr>
+                        </table>
+                    </b>
+                </div>
+                <div class="verticleline2"></div>
+                <div class="secondfoot">
+                        <h3 style="text-align:center;color:red;">Address</h3>
+                    <br clear="all"/>
+                    <b>
+                        <table>
+                            <tr><td>Karachi,Pakistan</td></tr>
+                            <tr><td>info@ABC.pk</td></tr>
+                        </table>
+                    </b>
+            </div>
+            <div class="verticleline2"></div>
+            <div class="thirdfoot">
+                    <h3 style="text-align:center;color:red;">Support</h3>
+                <br clear="all"/>
+                    <b>
+                        <table>
+                            <tr><td>FAQ</td></tr>
+                            <tr><td>Customer Support</td></tr>
+                            <tr><td>Shipping & Return Policy</td></tr>
+                            <tr><td>Contact Us</td></tr>
+                        </table>
+                    </b>
+            </div>
+            <div class="verticleline2"></div>
+    <div class="fourthfoot">
+                    <h3 style="text-align:center;color:red;">About us</h3>
+                <br clear="all"/>
+                    <table>
+                        <tr><td>A Place to buy & Sell pets and Pets products.</td></tr>
+                    </table>
+                    <br/>
+                        <a href="https://www.facebook.com/" target="_blank"><i id="fb" class="fa fa-facebook-square" style="font-size:30px;color:blue;"></i></a>
+                        <a href="https://twitter.com/login" target="_blank"><i id="tw" class="fa fa-twitter-square" style="font-size:30px;color:rgb(144, 144, 202)"></i></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><i id="wa" class="fa fa-whatsapp" style="font-size:30px;color:green;"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i id="yt" class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a>
+                    <br/>
+                    <br/>
+                        <p style="text-align:right;">Prepared by:Engr.Anees</p>
+        </div>
+        </footer>
+</body>
+</html>

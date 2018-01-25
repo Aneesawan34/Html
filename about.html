@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    header
+    {
+        background-color: black;
+        width: auto;
+        height: 150px;
+    }
+    #logo
+    {
+        height: 150px;
+        width: auto;
+    }
+    .logoicon
+    {
+        height:inherit;
+        width: 70;
+        float: left;
+    }
+    .logoname
+    {
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 100px;
+        float: left;
+        /* margin-left: 80px; */
+    }
+    .logoname h1
+    {
+        font-family:Times New Roman;
+    }
+    .logoname h3
+    {
+        font-size: 100%
+    }
+    .search
+    {
+        float:right;
+        margin-top: 40px;
+    }
+    .container-1
+    {
+        margin-right:0px;
+        width: 400px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+        float: right;
+    }
+    .container-1 input#search
+    {
+        width: 300px;
+        height: 50px;
+        margin-top: 5px;
+        background: #d30505c4;
+        border: none;
+        font-size: 15pt;
+        float: left;
+        color:white;
+        padding-left: 45px;
+        border-radius: 20px;
+    }
+    .container-1 input#search:active
+    {
+        outline:none;
+        background-color: rgb(109, 219, 109);
+    }
+    .container-1 button
+    {
+        position: absolute;
+        right: 28%;
+        top: 31%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    .menu
+    {
+        background-color: yellow;
+        float: right;
+        /* margin-top: 60px; */
+        width: 500px;
+        height: 40px;
+    }
+    .menu ul
+    {
+        margin: 10px;
+        list-style: none;
+    }
+    .menu ul li
+    {
+        float: left;
+    }
+    .menu ul li a
+    {
+        font-family: Lucida Sans Unicode;
+        font-size:20px;
+        margin: 0px 0px 0px 25px;
+        text-decoration: none;
+    }
+    .menu ul a:hover
+    {
+        background: green;
+        color: wheat;
+        border-radius: 20%;
+    }
+    .marquee1 img
+    {
+        height: 200px;
+        width: 300;
+        transition: all 3s;
+        float: left;
+        opacity: 0.5;
+    }
+    .marquee1:hover img
+    {
+        width: 400px;
+        transition: all 3s;
+        border-radius: 50%;
+        transform: scale(1.5) rotate(360deg);
+        opacity: 1;
+    }
+    .marquee2 img
+    {
+
+        height: 200px;
+        width: 300;
+        transition: all 3s;
+        float: left;
+        opacity: 0.5;
+    }
+    .marquee2:hover img
+    {
+        width: 400px;
+        transition: all 3s;
+        border-radius: 50%;
+        transform: scale(1.5) rotate(360deg);
+        opacity: 1;
+    }
+    .marquee3 img
+    {
+
+        height: 200px;
+        width: 300;
+        transition: all 3s;
+        float: left;
+        opacity: 0.5;
+    }
+    .marquee3:hover img
+    {
+        width: 400px;
+        transition: all 3s;
+        border-radius: 50%;
+        transform: scale(1.5) rotate(360deg);
+        opacity: 1;
+    }
+    .marquee4 img
+    {
+        height: 200px;
+        width: 300;
+        transition: all 3s;
+        float: left;
+        opacity: 0.5;
+    }
+    .marquee4:hover img
+    {
+        width: 400px;
+        transition: all 3s;
+        border-radius: 50%;
+        transform: scale(1.5) rotate(360deg);
+        opacity: 1;
+    }
+    .aboutheading
+    {
+        text-align: center;
+    }
+    .aboutheading font
+    {
+        font-family:sans-serif;
+        font-size: 50px;
+        transition: all 1;
+        animation: test 1s infinite;
+    }
+    @keyframes test
+    {
+    0%{color: whitesmoke}
+    20%{color: red}
+    60%{color: aqua}
+    80%{color: blueviolet}
+    100%{color: cyan}
+    }
+    .para
+    {
+        text-align: center;
+        font-family:sans-serif;
+        font-size: 20px;
+    }
+    footer
+    {
+        background-color: rgba(0, 0, 0, 0.774);
+        height: 250px;
+        width:auto;
+    }
+    .foot
+    {
+        width:1200px;
+        height:230px;
+        /* margin:80px; */
+        position: absolute;
+        left:30px; 
+    }
+    .firstfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .secondfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .thirdfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+        /* padding-right: 80px; */
+    }
+    .fourthfoot
+    {
+        width: 285px;
+        height: 200px;
+        color: aliceblue;
+        /* background-color:rgba(222, 184, 135, 0.712); */
+        float:left;
+    }
+    #fb
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #fb:hover
+    {
+        top: -5px;
+    }
+    #tw
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #tw:hover
+    {
+        top: -5px;
+    }
+    #wa
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #wa:hover
+    {
+        top: -5px;
+    }
+    #yt
+    {
+        transition: all 3s ease-in-out;
+        position: relative;
+    }
+    #yt:hover
+    {
+        top: -5px;
+    }
+    .verticleline2
+    {
+        border-left: 2px solid green;
+        float: left;
+        width: 4px;
+        height: 200px;
+    }
+</style>
+<body>
+    <header>
+        <div id="logo">
+            <div class="logoicon"><a href="index2.html"><img src="petshop.jpg" height="150px"></a></div>
+            <div class="logoname">
+                <h1>Pet Shop</h1>
+                <h3>Buy & sell Pets-Pets Product</h3>
+            </div>
+            <div class="container-1">
+                <input type="search" id="search" placeholder="Search" />
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="menu">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <br clear="all"/>
+    <br/>
+    <br/>
+    <br/>
+        <marquee behavior="scroll" scrollamount="20" onmouseover="stop()" onmouseout="start()">
+            <div class="marquee1"><img src="download (2).jpg"/></div>
+            <div class="marquee2"><img src="download (3).jpg"/></div>
+            <div class="marquee3"><img src="images (3).jpg"/></div>
+            <div class="marquee4"><img src="images (2).jpg"/></div>
+        </marquee>
+    <br clear="all"/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="aboutheading"><font>Wellcome to petshop</font></div>
+    <br/>
+    <br/>
+    <p class="para">
+        Petshop.pk is one of the best online stores that offer multiple pet products to the people. We focus on your pet’s requirements and needs and provide the best and quality food and other accessories. Our products are easily accessible in all over Pakistan. If you love your pet and really care about its health, then you must focus on best quality and valuable food and accessories for your pet.
+
+You can Buy Dog Food, Cat Food and fishes. We offer different kinds of food like dry food, home cooked, the raw food, the canned and semi moist food. You can get the best food that is most suitable for your pet. In addition to this food products we also provide pet accessories like the collar and leashes for cats and dogs.
+
+We deal in multiple pet food brands to provide a wide range of goods to our customers. Among the cat food products, we deal in Meow mix, KRM, Me-O, MERA, Royal Canin, TropiCat and many other brands. On the other hand, you can get the products of royal canine and Farmina food products for your dog.
+
+Main advantage of getting the pet products from our online retail store is that, you can get them at the reasonable Price and timely Delivery. Most of our products are available in store and you don’t need to surf so much. Just have a look and order us right now.
+    </p>
+    <br clear="all"/>
+    <footer>
+        <div class="foot">
+            <div class="firstfoot">
+                <h3 style="text-align:center;color:red;">Contacts</h3>
+                <br clear="all"/>
+                <b>
+                    <table>
+                        <tr><td>Mobile:</td><td>12345678910</td></tr>
+                        <tr><td>Whatsapp:</td><td>7555325706</td></tr>
+                        <tr><td>Email:</td><td>abc@gmail.com</td></tr>
+                        <tr><td>tweet:</td><td><a href="mailto:abc@mail.com">Tweet link</a></td></tr>
+                    </table>
+                </b>
+            </div>
+            <div class="verticleline2"></div>
+            <div class="secondfoot">
+                    <h3 style="text-align:center;color:red;">Address</h3>
+                <br clear="all"/>
+                <b>
+                    <table>
+                        <tr><td>Karachi,Pakistan</td></tr>
+                        <tr><td>info@ABC.pk</td></tr>
+                    </table>
+                </b>
+        </div>
+        <div class="verticleline2"></div>
+        <div class="thirdfoot">
+                <h3 style="text-align:center;color:red;">Support</h3>
+            <br clear="all"/>
+                <b>
+                    <table>
+                        <tr><td>FAQ</td></tr>
+                        <tr><td>Customer Support</td></tr>
+                        <tr><td>Shipping & Return Policy</td></tr>
+                        <tr><td>Contact Us</td></tr>
+                    </table>
+                </b>
+        </div>
+        <div class="verticleline2"></div>
+<div class="fourthfoot">
+                <h3 style="text-align:center;color:red;">About us</h3>
+            <br clear="all"/>
+                <table>
+                    <tr><td>A Place to buy & Sell pets and Pets products.</td></tr>
+                </table>
+                <br/>
+                    <a href="https://www.facebook.com/" target="_blank"><i id="fb" class="fa fa-facebook-square" style="font-size:30px;color:blue;"></i></a>
+                    <a href="https://twitter.com/login" target="_blank"><i id="tw" class="fa fa-twitter-square" style="font-size:30px;color:rgb(144, 144, 202)"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i id="wa" class="fa fa-whatsapp" style="font-size:30px;color:green;"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i id="yt" class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a>
+                <br/>
+                <br/>
+                    <p style="text-align:right;">Prepared by:Engr.Anees</p>
+    </div>
+    </footer>
+</body>
+</html>
